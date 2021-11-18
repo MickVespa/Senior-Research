@@ -2,16 +2,14 @@
 ##  Analysis of Maze Solving Algorithms using a Micro Mouse Robot
 
 ### Objective
-- Conduct an experiment using an actual maze solving robot inside of a constructed maze that will compare the random mouse algorithm vs Tremoux’s algorithm. 
-- This experiment will examine average time needed to complete the maze, and the variance in these results.
+- Conduct an experiment using the software Webots to emulate the GCTronic' e-puck robot attempt to solve various mazes, comparing the average time of maze completion between the wall follower and random maze algorithms
 
-### Materials
-- 4' X 8' MDF Board (Maze Floor)
-- 3ea 4' X 2' Particle Board (Cut to size for maze walls)
-- Velcro Strips 
-- Staple Gun with Staples
-- Black Electrical tape (use for mouse to follow)
+### Software
+- Webots Software can be downloaded from [here](https://cyberbotics.com/)
 
-### Tech
-- PICAXE 'PICone' Micromouse (Kit 110)
-- PICAXE Editor 6 (Software Application)
+
+Webots website contains all the required documentation required to be able to create and implement robots in it's virtual world. Their [tutorial series](https://cyberbotics.com/doc/guide/tutorial-1-your-first-simulation-in-webots) gives a user the proper tools and resources to familiarize themselfs with the UI.
+
+All mazes were randomly generated from [mazegenerator.net](https://www.mazegenerator.net/) and implemented in webotsw using solid wall nodes.
+
+The source code included in this repository includes the controllers for each algorithm written in python, and the world files (.wbt) that are opened with Webots.
