@@ -1,4 +1,4 @@
-"""my_controller_random_Mouse controller."""
+"""Right Wall Follower controller."""
 
 # You may need to import some classes of the controller module. Ex:
 #  from controller import Robot, Motor, DistanceSensor
