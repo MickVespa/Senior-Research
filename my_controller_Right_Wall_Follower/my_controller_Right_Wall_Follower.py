@@ -58,13 +58,6 @@ def run_robot(robot):
         print("--------------------------")
         print("Compass Heading = {} ".format(current_heading))
         print("--------------------------")
-
-    #read values from position sensor
-        ps_values[0] = left_ps.getValue()
-        ps_values[1] = right_ps.getValue()
-    
-        print("--------------------------")
-        print("position sensor values: {} {}".format(ps_values[0], ps_values[1]))
     
     # Process sensor data here.
         right_wall = prox_sensors[2].getValue() > 80
